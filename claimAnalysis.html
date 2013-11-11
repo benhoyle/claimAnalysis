@@ -6,10 +6,16 @@
 <script src="claimAnalysis.js" type="text/javascript">
 
 </script>
+<style>
+table {width:100%}
+tr:nth-child(even){background:#EEE}
+tr:nth-child(odd){background:#FFF}
+</style>
 </head>
 
-<body>
-<p>Paste text of independent claim below:</p>
-<textarea id="claimentry" style="height:80em; width:100%" onchange="parseClaim(this.value)"></textarea>
+<body id="body">
+<div id="pastebox"><p>Paste text of independent claim below:</p>
+<textarea id="claimentry" style="height:10em; width:100%" onchange="parseClaim(this.value)"></textarea></div>
+
 </body>
 </html>
